@@ -1,0 +1,91 @@
+<template lang="pug">
+.seven(:tap="owo.go('ten', 'rotateCarouselLeftOut&&ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&&ontop', 'rotateCarouselRightIn')")
+  img.soulless.so-13.item-13(width="769", height="92", src="@|seven-13.png|")
+  img.soulless.so-5.item-5(width="115", height="56", src="@|seven-5.png|")
+  img.soulless.so-11.item-11(width="107", height="53", src="@|seven-11.png|")
+  img.soulless.so-6.item-6(width="163", height="89", src="@|seven-6.png|")
+  img.soulless.so-10.item-10(width="126", height="53", src="@|seven-10.png|")
+  img.soulless.so-9.item-9(width="216", height="94", src="@|seven-9.png|")
+  img.soulless.so-8.item-8(width="126", height="58", src="@|seven-8.png|")
+  img.soulless.so-7.item-7(width="126", height="58", src="@|seven-7.png|")
+  img.soulless.so-4.item-4(width="192", height="61", src="@|seven-4.png|")
+  img.soulless.so-3.item-3(width="126", height="58", src="@|seven-3.png|")
+  img.soulless.so-12.item-12(width="10", height="853", src="@|seven-12.png|")
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+    }
+  }
+</script>
+
+
+<style lang="less">
+.so-13 {
+  position: absolute;
+  left: -8px;
+  top: 191px;
+  z-index: 2;
+}
+.so-5 {
+  position: absolute;
+  left: 236px;
+  top: 393px;
+  z-index: 10;
+}
+.so-11 {
+  position: absolute;
+  left: 400px;
+  top: 474px;
+  z-index: 4;
+}
+.so-6 {
+  position: absolute;
+  left: 188px;
+  top: 546px;
+  z-index: 9;
+}
+.so-10 {
+  position: absolute;
+  left: 400px;
+  top: 625px;
+  z-index: 5;
+}
+.so-9 {
+  position: absolute;
+  left: 136px;
+  top: 710px;
+  z-index: 6;
+}
+.so-8 {
+  position: absolute;
+  left: 400px;
+  top: 824px;
+  z-index: 7;
+}
+.so-7 {
+  position: absolute;
+  left: 226px;
+  top: 914px;
+  z-index: 8;
+}
+.so-4 {
+  position: absolute;
+  left: 399px;
+  top: 998px;
+  z-index: 11;
+}
+.so-3 {
+  position: absolute;
+  left: 227px;
+  top: 1087px;
+  z-index: 12;
+}
+.so-12 {
+  position: absolute;
+  left: 370px;
+  top: 331px;
+  z-index: 3;
+}
+</style>

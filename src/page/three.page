@@ -1,0 +1,40 @@
+<template lang="pug">
+.three(:tap="owo.go('four', 'rotateCarouselLeftOut&&ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&&ontop', 'rotateCarouselRightIn')")
+  img.soulless.so-9.item-9(width="769", height="93", src="@|three-9.png|")
+  img.soulless.so-8.item-8(width="649", height="592", src="@|three-8.png|")
+  img.soulless.so-7.item-7(width="650", height="296", src="@|three-7.png|")
+  
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      owo.tool.animate('fadeInLeftBig', this.query('.so-9')[0])
+      owo.tool.animate('fadeInRight', this.query('.so-8')[0], 1200)
+      owo.tool.animate('fadeIn', this.query('.so-7')[0],2000)
+    }
+  }
+</script>
+
+
+<style lang="less">
+.so-9 {
+  position: absolute;
+  left: -8px;
+  top: 198px;
+  z-index: 2;
+}
+.so-8 {
+  position: absolute;
+  left: 48px;
+  top: 349px;
+  z-index: 3;
+}
+.so-7 {
+  position: absolute;
+  left: 48px;
+  top: 978px;
+  z-index: 4;
+}
+
+</style>

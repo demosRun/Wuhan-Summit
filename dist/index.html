@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>页面</title>
+    <!-- 页面的元信息 -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, min-cardimum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="filetype" content="1"/>
+    <meta name="publishedtype" content="1"/>
+    <meta name="pagetype" content="2"/>
+    <meta name="screen-orientation" content="landscape"/>
+    <meta name="x5-orientation" content="landscape"/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="browsermode" content="application"/>
+    <meta name="x5-page-mode" content="app"/>
+    <!-- 页面主样式文件 -->
+<style>
+body, html, .ox {
+  padding: 0;
+  margin: 0;
+}
+
+.owo-animation {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  transform-style: preserve-3d;
+}
+.owo-animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owo-animation-forward {
+  z-index: 99;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+/* 清除浮动 */
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+[template="one"] .so-11 {
+  position: absolute;
+  left: 53px;
+  top: 195px;
+  z-index: 2;
+}
+
+[template="one"] .so-10 {
+  position: absolute;
+  left: 150px;
+  top: 694px;
+  z-index: 3;
+}
+
+[template="one"] .so-9 {
+  position: absolute;
+  left: 271px;
+  top: 987px;
+  z-index: 4;
+}
+[template="two"] .so-8 {
+  position: absolute;
+  left: 93px;
+  top: 237px;
+  z-index: 3;
+}
+
+[template="two"] .so-9 {
+  position: absolute;
+  left: 93px;
+  top: 675px;
+  z-index: 2;
+}
+[template="three"] .so-9 {
+  position: absolute;
+  left: -8px;
+  top: 198px;
+  z-index: 2;
+}
+
+[template="three"] .so-8 {
+  position: absolute;
+  left: 48px;
+  top: 349px;
+  z-index: 3;
+}
+
+[template="three"] .so-7 {
+  position: absolute;
+  left: 48px;
+  top: 978px;
+  z-index: 4;
+}
+[template="four"] .so-6 {
+  position: absolute;
+  left: 48px;
+  top: 220px;
+  z-index: 2;
+}
+[template="five"] .so-9 {
+  position: absolute;
+  left: 50px;
+  top: 191px;
+  z-index: 2;
+}
+
+[template="five"] .so-8 {
+  position: absolute;
+  left: 56px;
+  top: 264px;
+  z-index: 3;
+}
+
+[template="five"] .so-7 {
+  position: absolute;
+  left: 56px;
+  top: 594px;
+  z-index: 4;
+}
+
+[template="five"] .so-6 {
+  position: absolute;
+  left: 57px;
+  top: 924px;
+  z-index: 5;
+}
+
+[template="five"] .so-5 {
+  position: absolute;
+  left: 397px;
+  top: 924px;
+  z-index: 6;
+}
+[template="six"] .so-6 {
+  position: absolute;
+  left: -8px;
+  top: 191px;
+  z-index: 2;
+}
+
+[template="six"] .so-5 {
+  position: absolute;
+  left: 38px;
+  top: 319px;
+  z-index: 3;
+}
+[template="seven"] .so-13 {
+  position: absolute;
+  left: -8px;
+  top: 191px;
+  z-index: 2;
+}
+
+[template="seven"] .so-5 {
+  position: absolute;
+  left: 236px;
+  top: 393px;
+  z-index: 10;
+}
+
+[template="seven"] .so-11 {
+  position: absolute;
+  left: 400px;
+  top: 474px;
+  z-index: 4;
+}
+
+[template="seven"] .so-6 {
+  position: absolute;
+  left: 188px;
+  top: 546px;
+  z-index: 9;
+}
+
+[template="seven"] .so-10 {
+  position: absolute;
+  left: 400px;
+  top: 625px;
+  z-index: 5;
+}
+
+[template="seven"] .so-9 {
+  position: absolute;
+  left: 136px;
+  top: 710px;
+  z-index: 6;
+}
+
+[template="seven"] .so-8 {
+  position: absolute;
+  left: 400px;
+  top: 824px;
+  z-index: 7;
+}
+
+[template="seven"] .so-7 {
+  position: absolute;
+  left: 226px;
+  top: 914px;
+  z-index: 8;
+}
+
+[template="seven"] .so-4 {
+  position: absolute;
+  left: 399px;
+  top: 998px;
+  z-index: 11;
+}
+
+[template="seven"] .so-3 {
+  position: absolute;
+  left: 227px;
+  top: 1087px;
+  z-index: 12;
+}
+
+[template="seven"] .so-12 {
+  position: absolute;
+  left: 370px;
+  top: 331px;
+  z-index: 3;
+}
+[template="eight"] .so-2 {
+  position: absolute;
+  left: -8px;
+  top: 191px;
+  z-index: 3;
+}
+
+[template="eight"] .so-3 {
+  position: absolute;
+  left: 55px;
+  top: 358px;
+  z-index: 2;
+}
+
+[template="eight"] .so-1 {
+  position: absolute;
+  left: 141px;
+  top: 1007px;
+  z-index: 4;
+}
+[template="nine"] .so-0 {
+  position: absolute;
+  left: -8px;
+  top: 189px;
+  z-index: 3;
+}
+
+[template="nine"] .so-1 {
+  position: absolute;
+  left: 55px;
+  top: 988px;
+  z-index: 2;
+}
+[template="ten"] .so-0 {
+  position: absolute;
+  left: -47px;
+  top: 191px;
+  z-index: 2;
+}
+
+[template="ten"] .swiper-container {
+  height: 720px;
+  width: 680px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+[template="ten"] .swiper-slide {
+  overflow: hidden;
+  position: relative;
+}
+
+[template="ten"] .swiper-slide .people {
+  width: 83%;
+  border-radius: 50%;
+  position: absolute;
+  left: 7px;
+  border: 1px solid white;
+  padding: 3%;
+  height: 75vw;
+  overflow: hidden;
+}
+
+[template="ten"] .swiper-slide .people img {
+  width: 94%;
+  height: 94%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 3%;
+  border-radius: 50%;
+}
+
+[template="ten"] .people1 {
+  top: 10px;
+}
+
+[template="ten"] .people2 {
+  top: 365px;
+}
+
+[template="ten"] .swiper-slide:nth-of-type(even) {
+  margin-top: 40px;
+}
+
+[template="ten"] .name {
+  position: absolute;
+  line-height: 60px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 96%;
+  bottom: 0;
+  text-align: center;
+  font-size: 28px;
+  color: white;
+}
+</style>
+    <!-- 附属css文件 -->
+    <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
+    <link rel="stylesheet" href="./static/css/swiper4.5.0.css" charset="utf-8">
+    
+    <link rel="stylesheet" href="./static/css/owo.animate.css">
+  </head>
+  <body>
+    <!-- 页面区域 -->
+    <div class="one ox" :tap="owo.go('two', 'rotateCarouselLeftOut&amp;&amp;ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&amp;&amp;ontop', 'rotateCarouselRightIn')" template="one" style="display: none;"><img class="soulless so-11 item-11" width="643" height="382" src="./static/resource/one-11.png"><img class="soulless so-10 item-10" width="459" height="95" src="./static/resource/one-10.png"><img class="soulless so-9 item-9" width="209" height="52" src="./static/resource/one-9.png"></div>
+    <div class="two ox" :tap="owo.go('three', 'rotateCarouselLeftOut&amp;&amp;ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&amp;&amp;ontop', 'rotateCarouselRightIn')" template="two" style="display: none;"><img class="soulless so-8 item-8" width="600" height="392" src="./static/resource/two-8.png"><img class="soulless so-9 item-9" width="600" height="297" src="./static/resource/two-9.png"></div>
+    <div class="three ox" :tap="owo.go('four', 'rotateCarouselLeftOut&amp;&amp;ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&amp;&amp;ontop', 'rotateCarouselRightIn')" template="three" style="display: none;"><img class="soulless so-9 item-9" width="769" height="93" src="./static/resource/three-9.png"><img class="soulless so-8 item-8" width="649" height="592" src="./static/resource/three-8.png"><img class="soulless so-7 item-7" width="650" height="296" src="./static/resource/three-7.png"></div>
+    <div class="four ox" :tap="owo.go('five', 'rotateCarouselLeftOut&amp;&amp;ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&amp;&amp;ontop', 'rotateCarouselRightIn')" template="four" style="display: none;"><img class="soulless so-6 item-6" width="649" height="857" src="./static/resource/four-6.png"></div>
+    <div class="five ox" :tap="owo.go('six', 'rotateCarouselLeftOut&amp;&amp;ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&amp;&amp;ontop', 'rotateCarouselRightIn')" template="five" style="display: none;"><img class="soulless so-9 item-9" width="186" height="37" src="./static/resource/five-9.png"><img class="soulless so-8 item-8" width="640" height="290" src="./static/resource/five-8.png"><img class="soulless so-7 item-7" width="640" height="290" src="./static/resource/five-7.png"><img class="soulless so-6 item-6" width="299" height="299" src="./static/resource/five-6.png"><img class="soulless so-5 item-5" width="299" height="299" src="./static/resource/five-5.png"></div>
+    <div class="six ox" :tap="owo.go('seven', 'rotateCarouselLeftOut&amp;&amp;ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&amp;&amp;ontop', 'rotateCarouselRightIn')" template="six" style="display: none;"><img class="soulless so-6 item-6" width="769" height="92" src="./static/resource/six-6.png"><img class="soulless so-5 item-5" width="659" height="941" src="./static/resource/six-5.png"></div>
+    <div class="seven ox" :tap="owo.go('ten', 'rotateCarouselLeftOut&amp;&amp;ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&amp;&amp;ontop', 'rotateCarouselRightIn')" template="seven" style="display: none;"><img class="soulless so-13 item-13" width="769" height="92" src="./static/resource/seven-13.png"><img class="soulless so-5 item-5" width="115" height="56" src="./static/resource/seven-5.png"><img class="soulless so-11 item-11" width="107" height="53" src="./static/resource/seven-11.png"><img class="soulless so-6 item-6" width="163" height="89" src="./static/resource/seven-6.png"><img class="soulless so-10 item-10" width="126" height="53" src="./static/resource/seven-10.png"><img class="soulless so-9 item-9" width="216" height="94" src="./static/resource/seven-9.png"><img class="soulless so-8 item-8" width="126" height="58" src="./static/resource/seven-8.png"><img class="soulless so-7 item-7" width="126" height="58" src="./static/resource/seven-7.png"><img class="soulless so-4 item-4" width="192" height="61" src="./static/resource/seven-4.png"><img class="soulless so-3 item-3" width="126" height="58" src="./static/resource/seven-3.png"><img class="soulless so-12 item-12" width="10" height="853" src="./static/resource/seven-12.png"></div>
+    <div class="eight ox" :tap="owo.go('nine', 'rotateCarouselLeftOut&amp;&amp;ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&amp;&amp;ontop', 'rotateCarouselRightIn')" template="eight" style="display: none;"><img class="soulless so-2 item-2" width="769" height="92" src="./static/resource/eight-2.png"><img class="soulless so-3 item-3" width="642" height="562" src="./static/resource/eight-3.png"><img class="soulless so-1 item-1" width="469" height="81" src="./static/resource/eight-1.png"></div>
+    <div class="nine ox" template="nine" style="display: none;"><img class="soulless so-0 item-0" width="769" height="94" src="./static/resource/nine-0.png"><img class="soulless so-1 item-1" width="639" height="90" src="./static/resource/nine-1.png"></div>
+    <div class="ten ox" template="ten" style="display: none;"><img class="soulless so-0 item-0" width="846" height="93" src="./static/resource/ten-0.png"><div class="swiper-container"><div class="swiper-wrapper"><div class="swiper-slide"><div class="people people1"><img src="./static/resource/people-1.png"><div class="name">欧阳钟灿</div></div><div class="people people2"><img src="./static/resource/people-2.png"><div class="name">欧阳钟灿</div></div></div><div class="swiper-slide"><div class="people people1"><img src="./static/resource/people-3.png"><div class="name">欧阳钟灿</div></div><div class="people people2"><img src="./static/resource/people-4.png"><div class="name">欧阳钟灿</div></div></div><div class="swiper-slide"><div class="people people1"><img src="./static/resource/people-5.png"><div class="name">欧阳钟灿</div></div><div class="people people2"><img src="./static/resource/people-6.png"><div class="name">欧阳钟灿</div></div></div><div class="swiper-slide"><div class="people people1"><img src="./static/resource/people-7.png"><div class="name">欧阳钟灿</div></div><div class="people people2"><img src="./static/resource/people-8.png"><div class="name">欧阳钟灿</div></div></div><div class="swiper-slide"><div class="people people1"><img src="./static/resource/people-9.png"><div class="name">欧阳钟灿</div></div><div class="people people2"><img src="./static/resource/people-10.png"><div class="name">欧阳钟灿</div></div></div></div></div></div>
+    <!-- 框架script代码 --><script>"use strict";
+
+// 存储页面基本信息
+var owo = {
+  // 页面默认入口 如果没有设置 则取第一个页面为默认页面
+  entry: "one",
+  // 全局方法变量
+  tool: {},
+  // 框架状态变量
+  state: {}
+};
+/*
+  存储每个页面的函数
+  键名：页面名称
+  键值：方法列表
+*/
+
+owo.script = {
+  "one": {
+    "created": function created() {
+      owo.tool.animate('fadeInLeftBig', this.query('.so-11')[0]);
+      owo.tool.animate('fadeInRight', this.query('.so-10')[0], 1200);
+      owo.tool.animate('fadeIn', this.query('.so-9')[0], 2000);
+    }
+  },
+  "two": {
+    "created": function created() {
+      owo.tool.animate('fadeInLeftBig', this.query('.so-8')[0]);
+      owo.tool.animate('fadeIn', this.query('.so-9')[0], 1600);
+    }
+  },
+  "three": {
+    "created": function created() {
+      owo.tool.animate('fadeInLeftBig', this.query('.so-9')[0]);
+      owo.tool.animate('fadeInRight', this.query('.so-8')[0], 1200);
+      owo.tool.animate('fadeIn', this.query('.so-7')[0], 2000);
+    }
+  },
+  "four": {
+    "created": function created() {}
+  },
+  "five": {
+    "created": function created() {}
+  },
+  "six": {
+    "created": function created() {}
+  },
+  "seven": {
+    "created": function created() {}
+  },
+  "eight": {
+    "created": function created() {}
+  },
+  "nine": {
+    "created": function created() {}
+  },
+  "ten": {
+    "created": function created() {
+      setTimeout(function () {
+        new Swiper('.swiper-container', {
+          slidesPerView: 2,
+          loop: true,
+          autoplay: true
+        });
+      }, 0);
+    }
+  }
+};</script>
+<!-- 框架script文件 -->
+<script src="./static/js/owo.main.js" type="text/javascript" charset="UTF-8"></script>
+<!-- 调试-热刷新代码 -->
+<script src="./static/js/autoReload.js" type="text/javascript" charset="UTF-8"></script>
+
+    <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript"  charset="UTF-8"></script>
+    <script src="./static/js/swiper.4.5.0.js" type="text/javascript"  charset="UTF-8"></script>
+    <script src="./static/js/main.js" type="text/javascript"  charset="UTF-8"></script>
+  </body>
+</html>

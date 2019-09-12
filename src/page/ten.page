@@ -1,0 +1,120 @@
+<template lang="pug">
+//- (:tap="owo.go('eight', 'rotateCarouselLeftOut&&ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&&ontop', 'rotateCarouselRightIn')")
+.ten
+  img.soulless.so-0.item-0(width="846", height="93", src="@|ten-0.png|")
+  .swiper-container
+    .swiper-wrapper
+      .swiper-slide
+        .people.people1
+          img(src="@|people-1.png|")
+          .name 欧阳钟灿
+        .people.people2
+          img(src="@|people-2.png|")
+          .name 欧阳钟灿
+      .swiper-slide
+        .people.people1
+          img(src="@|people-3.png|")
+          .name 欧阳钟灿
+        .people.people2
+          img(src="@|people-4.png|")
+          .name 欧阳钟灿
+      .swiper-slide
+        .people.people1
+          img(src="@|people-5.png|")
+          .name 欧阳钟灿
+        .people.people2
+          img(src="@|people-6.png|")
+          .name 欧阳钟灿
+      .swiper-slide
+        .people.people1
+          img(src="@|people-7.png|")
+          .name 欧阳钟灿
+        .people.people2
+          img(src="@|people-8.png|")
+          .name 欧阳钟灿
+      .swiper-slide
+        .people.people1
+          img(src="@|people-9.png|")
+          .name 欧阳钟灿
+        .people.people2
+          img(src="@|people-10.png|")
+          .name 欧阳钟灿
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      setTimeout(() => {
+        new Swiper('.swiper-container', {
+          slidesPerView: 2,
+          loop: true,
+          autoplay: true
+        })
+      }, 0)
+    }
+  }
+</script>
+
+
+<style lang="less">
+.so-0 {
+  position: absolute;
+  left: -47px;
+  top: 191px;
+  z-index: 2;
+}
+.swiper-container {
+  height: 720px;
+  width: 680px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.swiper-slide {
+  overflow: hidden;
+  position: relative;
+}
+.swiper-slide .people {
+  width: 83%;
+  border-radius: 50%;
+  position: absolute;
+  left: 7px;
+  border: 1px solid white;
+  padding: 3%;
+  height: 75vw;
+  overflow: hidden;
+  img {
+    width: 94%;
+    height: 94%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 3%;
+    border-radius: 50%;
+  }
+}
+
+.people1 {
+  top: 10px;
+}
+.people2 {
+  top: 365px;
+}
+.swiper-slide:nth-of-type(even) {
+  margin-top: 40px;
+}
+.name {
+  position: absolute;
+  line-height: 60px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 96%;
+  bottom: 0;
+  text-align: center;
+  font-size: 28px;
+  color: white;
+}
+</style>

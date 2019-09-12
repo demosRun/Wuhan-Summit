@@ -1,0 +1,21 @@
+<template lang="pug">
+.four(:tap="owo.go('five', 'rotateCarouselLeftOut&&ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&&ontop', 'rotateCarouselRightIn')")
+  img.soulless.so-6.item-6(width="649", height="857", src="@|four-6.png|")
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+    }
+  }
+</script>
+
+
+<style lang="less">
+.so-6 {
+  position: absolute;
+  left: 48px;
+  top: 220px;
+  z-index: 2;
+}
+</style>

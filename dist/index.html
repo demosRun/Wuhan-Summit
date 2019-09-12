@@ -422,7 +422,12 @@ owo.script = {
     "created": function created() {}
   },
   "nine": {
-    "created": function created() {}
+    "created": function created() {
+      var sendData = "danwei=sdsd&renyuan=sdsd&zhiwu=sdsd&beizhu=sdsddd&tel=2111212";
+      owo.tool.post("http://littlepoll.people.com.cn/5g/table.php", sendData, function (result) {
+        console.log(result);
+      });
+    }
   },
   "ten": {
     "created": function created() {

@@ -7,6 +7,10 @@
 <script>
   module.exports = {
     created: function () {
+      const sendData = `danwei=sdsd&renyuan=sdsd&zhiwu=sdsd&beizhu=sdsddd&tel=2111212`
+      owo.tool.post("http://littlepoll.people.com.cn/5g/table.php", sendData, (result)=> {
+        console.log(result)
+      })
     }
   }
 </script>

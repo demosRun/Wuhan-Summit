@@ -1,16 +1,47 @@
 <template lang="pug">
 .nine
   img.soulless.so-0.item-0(width="769", height="94", src="@|nine-0.png|")
-  img.soulless.so-1.item-1(width="639", height="90", src="@|nine-1.png|")
+  img.soulless.so-1.item-1(width="639", height="90", src="@|nine-1.png|", :tap="sendData")
+  // 输入框
+  .input-box
+    input.danwei(type="text", placeholder="参会单位", :blur="scrollIntoView")
+    input.renyuan(type="text", placeholder="参会人员", :blur="scrollIntoView")
+    input.zhiwu(type="text", placeholder="职务", :blur="scrollIntoView")
+    input.beizhu(type="text", placeholder="电话", :blur="scrollIntoView")
+    input.tel(type="text", placeholder="备注", :blur="scrollIntoView")
 </template>
 
 <script>
   module.exports = {
     created: function () {
-      const sendData = `danwei=sdsd&renyuan=sdsd&zhiwu=sdsd&beizhu=sdsddd&tel=2111212`
-      owo.tool.post("http://littlepoll.people.com.cn/5g/table.php", sendData, (result)=> {
-        console.log(result)
+      owo.tool.touch({
+        el: this.$el,
+        end: function end(e) {
+          if (e.swipe[0] < -100) {
+            owo.tool.toast('已经是最后一页了!', 30)
+          } else if (e.swipe[0] > 100) {
+            owo.go('eight', 'rotateCarouselRightOut&&ontop', 'rotateCarouselRightIn', 'rotateCarouselLeftOut&&ontop', 'rotateCarouselLeftIn', true)
+          }
+        }
       })
+    },
+    sendData: function () {
+      const danwei = this.query('.danwei')[0].value
+      const renyuan = this.query('.renyuan')[0].value
+      const zhiwu = this.query('.zhiwu')[0].value
+      const beizhu = this.query('.beizhu')[0].value
+      const tel = this.query('.tel')[0].value
+      if (danwei && renyuan && zhiwu && beizhu && tel) {
+        const sendData = `danwei=${danwei}&renyuan=${renyuan}&zhiwu=${zhiwu}&beizhu=${beizhu}&tel=${tel}`
+        owo.tool.post("http://littlepoll.people.com.cn/5g/table.php", sendData, (result)=> {
+          owo.tool.toast('感谢您的参与!', 30)
+        })
+      } else {
+        owo.tool.toast('还有尚未填写信息!', 30)
+      }
+    },
+    scrollIntoView: function () {
+      window.scrollTo(0, 0)
     }
   }
 </script>
@@ -28,5 +59,26 @@
   left: 55px;
   top: 988px;
   z-index: 2;
+}
+.input-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 360px;
+  margin: auto;
+  width: 80%;
+  height: 500px;
+}
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #1c5d83;
+  height: 80px;
+  line-height: 80px;
+  width: 100%;
+  font-size: 34px;
+  color: white;
+  outline: none;
+  padding: 0 10px;
 }
 </style>

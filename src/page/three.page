@@ -1,5 +1,5 @@
 <template lang="pug">
-.three(:tap="owo.go('four', 'rotateCarouselLeftOut&&ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&&ontop', 'rotateCarouselRightIn')")
+.three
   img.soulless.so-9.item-9(width="769", height="93", src="@|three-9.png|")
   img.soulless.so-8.item-8(width="649", height="592", src="@|three-8.png|")
   img.soulless.so-7.item-7(width="650", height="296", src="@|three-7.png|")
@@ -9,9 +9,18 @@
 <script>
   module.exports = {
     created: function () {
-      owo.tool.animate('fadeInLeftBig', this.query('.so-9')[0])
-      owo.tool.animate('fadeInRight', this.query('.so-8')[0], 1200)
-      owo.tool.animate('fadeIn', this.query('.so-7')[0],2000)
+      owo.tool.animate('fadeInRight', this.query('.so-8')[0], 400)
+      owo.tool.animate('fadeIn', this.query('.so-7')[0], 1000)
+      owo.tool.touch({
+        el: this.$el,
+        end: function end(e) {
+          if (e.swipe[0] < -100) {
+            owo.go('four', 'rotateCarouselLeftOut&&ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&&ontop', 'rotateCarouselRightIn', true)
+          } else if (e.swipe[0] > 100) {
+            owo.go('two', 'rotateCarouselRightOut&&ontop', 'rotateCarouselRightIn', 'rotateCarouselLeftOut&&ontop', 'rotateCarouselLeftIn', true)
+          }
+        }
+      })
     }
   }
 </script>

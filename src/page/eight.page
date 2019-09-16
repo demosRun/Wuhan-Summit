@@ -1,13 +1,26 @@
 <template lang="pug">
-.eight(:tap="owo.go('nine', 'rotateCarouselLeftOut&&ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&&ontop', 'rotateCarouselRightIn')")
+.eight
   img.soulless.so-2.item-2(width="769", height="92", src="@|eight-2.png|")
-  img.soulless.so-3.item-3(width="642", height="562", src="@|eight-3.png|")
+  img.soulless.so-3.item-3(width="642", height="562", src="@|eight-3.png|", :tap="toMap")
   img.soulless.so-1.item-1(width="469", height="81", src="@|eight-1.png|")
 </template>
 
 <script>
   module.exports = {
     created: function () {
+      owo.tool.touch({
+        el: this.$el,
+        end: function end(e) {
+          if (e.swipe[0] < -100) {
+            owo.go('nine', 'rotateCarouselLeftOut&&ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&&ontop', 'rotateCarouselRightIn', true)
+          } else if (e.swipe[0] > 100) {
+            owo.go('ten', 'rotateCarouselRightOut&&ontop', 'rotateCarouselRightIn', 'rotateCarouselLeftOut&&ontop', 'rotateCarouselLeftIn', true)
+          }
+        }
+      })
+    },
+    toMap: function () {
+      window.location.href = "https://m.amap.com/detail/index/poiid=B001B16X9G"
     }
   }
 </script>

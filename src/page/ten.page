@@ -1,44 +1,72 @@
 <template lang="pug">
-//- (:tap="owo.go('eight', 'rotateCarouselLeftOut&&ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&&ontop', 'rotateCarouselRightIn')")
 .ten
   img.soulless.so-0.item-0(width="846", height="93", src="@|ten-0.png|")
+  // 浮层
+  .shelter
+    .info-box
+      .info
+        //- 自动生成
+        img.people(src="")
+        span
+        p
+        img.close(src="@|close.png|", :tap="closeInfo")
   .swiper-container
     .swiper-wrapper
       .swiper-slide
-        .people.people1
+        .people.people1(:tap="showItem")
           img(src="@|people-1.png|")
           .name 欧阳钟灿
-        .people.people2
+          .title 欧阳钟灿 理论物理学家
+          p 理论物理学家，1984年在北京清华大学获得博士学位，1987至1988年间，师从扭曲液晶发明者W.Helfrich教授研究液晶生物膜理论，1989加入中科院理论物理研究所, 1997当选中国科学院院士，2003第三世界科学院院士，2015年日本应用物理学会国际会士。
+        .people.people2(:tap="showItem")
           img(src="@|people-2.png|")
           .name 欧阳钟灿
+          .title 欧阳钟灿 理论物理学家
+          p 理论物理学家，1984年在北京清华大学获得博士学位，1987至1988年间，师从扭曲液晶发明者W.Helfrich教授研究液晶生物膜理论，1989加入中科院理论物理研究所, 1997当选中国科学院院士，2003第三世界科学院院士，2015年日本应用物理学会国际会士。
       .swiper-slide
-        .people.people1
+        .people.people1(:tap="showItem")
           img(src="@|people-3.png|")
           .name 欧阳钟灿
-        .people.people2
+          .title 欧阳钟灿 理论物理学家
+          p 理论物理学家，1984年在北京清华大学获得博士学位，1987至1988年间，师从扭曲液晶发明者W.Helfrich教授研究液晶生物膜理论，1989加入中科院理论物理研究所, 1997当选中国科学院院士，2003第三世界科学院院士，2015年日本应用物理学会国际会士。
+        .people.people2(:tap="showItem")
           img(src="@|people-4.png|")
           .name 欧阳钟灿
+          .title 欧阳钟灿 理论物理学家
+          p 理论物理学家，1984年在北京清华大学获得博士学位，1987至1988年间，师从扭曲液晶发明者W.Helfrich教授研究液晶生物膜理论，1989加入中科院理论物理研究所, 1997当选中国科学院院士，2003第三世界科学院院士，2015年日本应用物理学会国际会士。
       .swiper-slide
-        .people.people1
+        .people.people1(:tap="showItem")
           img(src="@|people-5.png|")
           .name 欧阳钟灿
-        .people.people2
+          .title 欧阳钟灿 理论物理学家
+          p 理论物理学家，1984年在北京清华大学获得博士学位，1987至1988年间，师从扭曲液晶发明者W.Helfrich教授研究液晶生物膜理论，1989加入中科院理论物理研究所, 1997当选中国科学院院士，2003第三世界科学院院士，2015年日本应用物理学会国际会士。
+        .people.people2(:tap="showItem")
           img(src="@|people-6.png|")
           .name 欧阳钟灿
+          .title 欧阳钟灿 理论物理学家
+          p 理论物理学家，1984年在北京清华大学获得博士学位，1987至1988年间，师从扭曲液晶发明者W.Helfrich教授研究液晶生物膜理论，1989加入中科院理论物理研究所, 1997当选中国科学院院士，2003第三世界科学院院士，2015年日本应用物理学会国际会士。
       .swiper-slide
-        .people.people1
+        .people.people1(:tap="showItem")
           img(src="@|people-7.png|")
           .name 欧阳钟灿
-        .people.people2
+          .title 欧阳钟灿 理论物理学家
+          p 理论物理学家，1984年在北京清华大学获得博士学位，1987至1988年间，师从扭曲液晶发明者W.Helfrich教授研究液晶生物膜理论，1989加入中科院理论物理研究所, 1997当选中国科学院院士，2003第三世界科学院院士，2015年日本应用物理学会国际会士。
+        .people.people2(:tap="showItem")
           img(src="@|people-8.png|")
           .name 欧阳钟灿
+          .title 欧阳钟灿 理论物理学家
+          p 理论物理学家，1984年在北京清华大学获得博士学位，1987至1988年间，师从扭曲液晶发明者W.Helfrich教授研究液晶生物膜理论，1989加入中科院理论物理研究所, 1997当选中国科学院院士，2003第三世界科学院院士，2015年日本应用物理学会国际会士。
       .swiper-slide
-        .people.people1
+        .people.people1(:tap="showItem")
           img(src="@|people-9.png|")
           .name 欧阳钟灿
-        .people.people2
+          .title 欧阳钟灿 理论物理学家
+          p 理论物理学家，1984年在北京清华大学获得博士学位，1987至1988年间，师从扭曲液晶发明者W.Helfrich教授研究液晶生物膜理论，1989加入中科院理论物理研究所, 1997当选中国科学院院士，2003第三世界科学院院士，2015年日本应用物理学会国际会士。
+        .people.people2(:tap="showItem")
           img(src="@|people-10.png|")
           .name 欧阳钟灿
+          .title 欧阳钟灿 理论物理学家
+          p 理论物理学家，1984年在北京清华大学获得博士学位，1987至1988年间，师从扭曲液晶发明者W.Helfrich教授研究液晶生物膜理论，1989加入中科院理论物理研究所, 1997当选中国科学院院士，2003第三世界科学院院士，2015年日本应用物理学会国际会士。
 </template>
 
 <script>
@@ -51,6 +79,31 @@
           autoplay: true
         })
       }, 0)
+      owo.tool.touch({
+        el: this.$el,
+        end: function end(e) {
+          if (e.swipe[0] < -100) {
+            owo.go('eight', 'rotateCarouselLeftOut&&ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&&ontop', 'rotateCarouselRightIn', true)
+          } else if (e.swipe[0] > 100) {
+            owo.go('seven', 'rotateCarouselRightOut&&ontop', 'rotateCarouselRightIn', 'rotateCarouselLeftOut&&ontop', 'rotateCarouselLeftIn', true)
+          }
+        }
+      })
+    },
+    showItem: function () {
+      const title = this.$event.target.getElementsByClassName('title')[0].innerText
+      const text = this.$event.target.getElementsByTagName('p')[0].innerText
+      this.query('.shelter img')[0].src = this.$event.target.getElementsByTagName('img')[0].src
+      this.query('.shelter span')[0].innerText = title
+      this.query('.shelter p')[0].innerText = text
+      this.query('.shelter')[0].style.display = 'block'
+    },
+    showInfo: function () {
+      this.query('.shelter')[0].style.display = 'block'
+    },
+    closeInfo: function () {
+      console.log('sdsd')
+      this.query('.shelter')[0].style.display = 'none'
     }
   }
 </script>
@@ -64,7 +117,7 @@
   z-index: 2;
 }
 .swiper-container {
-  height: 720px;
+  height: 730px;
   width: 680px;
   position: absolute;
   left: 0;
@@ -95,6 +148,10 @@
     margin: auto;
     top: 3%;
     border-radius: 50%;
+    pointer-events: none;
+  }
+  title, p {
+    display: none;
   }
 }
 
@@ -110,11 +167,71 @@
 .name {
   position: absolute;
   line-height: 60px;
+  height: 60px;
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.8);
   width: 96%;
   bottom: 0;
   text-align: center;
   font-size: 28px;
   color: white;
+  pointer-events: none;
+}
+.shelter {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  display: none;
+  .info-box {
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 7%;
+    bottom: 0;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  .info {
+    width: 90%;
+    padding: 10% 5%;
+    height: 87%;
+    background: #0a1630;
+  }
+  .close {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 5%;
+  }
+  .people {
+    width: 54vw;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 1%;
+    height: 54vw;
+  }
+  span {
+    color: white;
+    font-size: 40px;
+    line-height: 110px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+  }
+  p {
+    color: white;
+    font-size: 30px;
+    line-height: 42px;
+    height: 340px;
+    overflow: auto;
+  }
 }
 </style>

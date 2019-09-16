@@ -1,0 +1,100 @@
+10:34:22.458 INFO  --------------------------- 开始编译 --------------------------- 
+10:34:22.458 INFO  程序运行目录: D:\work\Wuhan Summit 
+10:34:22.458 INFO  首次启动! 
+10:34:22.458 INFO  生成版本号: r5n3pqzsyj 
+10:34:22.490 INFO  清理资源文件夹: D:\work\Wuhan Summit\dist\static 
+10:34:22.490 INFO  文件夹不存在: D:\work\Wuhan Summit\dist\static 
+10:34:22.491 INFO  创建文件夹: D:\work\Wuhan Summit\dist\static 
+10:34:22.491 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+10:34:22.491 DEBUG 读取网页标题: 页面 
+10:34:22.491 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, min-cardimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
+10:34:22.492 DEBUG 模块 one 因名称重复被重命名为 one0 
+10:34:22.492 INFO  开始处理模块: one 
+10:34:24.817 DEBUG 缓存模板: one./src/page/one.page 
+10:34:24.817 DEBUG 模板one处理用时: 2325 毫秒! 
+10:34:24.818 DEBUG 模块 two 因名称重复被重命名为 two0 
+10:34:24.818 INFO  开始处理模块: two 
+10:34:24.834 DEBUG 缓存模板: two./src/page/two.page 
+10:34:24.834 DEBUG 模板two处理用时: 16 毫秒! 
+10:34:24.834 DEBUG 模块 three 因名称重复被重命名为 three0 
+10:34:24.834 INFO  开始处理模块: three 
+10:34:24.853 DEBUG 缓存模板: three./src/page/three.page 
+10:34:24.853 DEBUG 模板three处理用时: 19 毫秒! 
+10:34:24.853 DEBUG 模块 four 因名称重复被重命名为 four0 
+10:34:24.853 INFO  开始处理模块: four 
+10:34:24.869 DEBUG 缓存模板: four./src/page/four.page 
+10:34:24.869 DEBUG 模板four处理用时: 16 毫秒! 
+10:34:24.869 DEBUG 模块 five 因名称重复被重命名为 five0 
+10:34:24.869 INFO  开始处理模块: five 
+10:34:24.891 DEBUG 缓存模板: five./src/page/five.page 
+10:34:24.891 DEBUG 模板five处理用时: 22 毫秒! 
+10:34:24.891 DEBUG 模块 six 因名称重复被重命名为 six0 
+10:34:24.891 INFO  开始处理模块: six 
+10:34:24.906 DEBUG 缓存模板: six./src/page/six.page 
+10:34:24.906 DEBUG 模板six处理用时: 15 毫秒! 
+10:34:24.906 DEBUG 模块 seven 因名称重复被重命名为 seven0 
+10:34:24.906 INFO  开始处理模块: seven 
+10:34:24.937 DEBUG 缓存模板: seven./src/page/seven.page 
+10:34:24.937 DEBUG 模板seven处理用时: 31 毫秒! 
+10:34:24.937 DEBUG 模块 eight 因名称重复被重命名为 eight0 
+10:34:24.937 INFO  开始处理模块: eight 
+10:34:24.944 DEBUG 缓存模板: eight./src/page/eight.page 
+10:34:24.944 DEBUG 模板eight处理用时: 7 毫秒! 
+10:34:24.944 DEBUG 模块 nine 因名称重复被重命名为 nine0 
+10:34:24.944 INFO  开始处理模块: nine 
+10:34:24.971 DEBUG 缓存模板: nine./src/page/nine.page 
+10:34:24.971 DEBUG 模板nine处理用时: 27 毫秒! 
+10:34:24.971 DEBUG 模块 ten 因名称重复被重命名为 ten0 
+10:34:24.971 INFO  开始处理模块: ten 
+10:34:25.042 DEBUG 缓存模板: ten./src/page/ten.page 
+10:34:25.042 DEBUG 模板ten处理用时: 71 毫秒! 
+10:34:25.091 INFO  文件夹不存在: D:/work/Wuhan Summit/dist/static/resource 
+10:34:25.091 INFO  创建文件夹: D:/work/Wuhan Summit/dist/static/resource 
+10:34:25.091 DEBUG css中的资源处理完毕! 
+10:34:25.091 DEBUG 使用postcss处理样式，使用了1个插件! 
+10:34:25.161 INFO  文件夹不存在: D:\work\Wuhan Summit\dist\static\css 
+10:34:25.161 INFO  创建文件夹: D:\work\Wuhan Summit\dist\static\css 
+10:34:25.161 INFO  开始处理附属css中的资源 
+10:34:25.162 INFO  附属css中的资源处理完毕! 
+10:34:25.162 INFO  读取文件: D:\work\Wuhan Summit\src\resource\swiper.4.5.0.min.css 
+10:34:25.162 INFO  附属css中的资源不需要处理! 
+10:34:25.167 INFO  处理字体:{} 
+10:34:25.193 INFO  使用postcss处理完毕! 用时: 102 毫秒 
+10:34:25.193 DEBUG 需要经过特殊处理的css: [["[template=\"one\"] .one:",".one[template=\"one\"]:"],["[template=\"one\"] .one ",".one[template=\"one\"] "],["[template=\"one\"] .one{",".one[template=\"one\"]{"],["[template=\"one\"] div:","div[template=\"one\"]:"],["[template=\"one\"] div ","div[template=\"one\"] "],["[template=\"one\"] div{","div[template=\"one\"]{"],["[template=\"two\"] .two:",".two[template=\"two\"]:"],["[template=\"two\"] .two ",".two[template=\"two\"] "],["[template=\"two\"] .two{",".two[template=\"two\"]{"],["[template=\"two\"] div:","div[template=\"two\"]:"],["[template=\"two\"] div ","div[template=\"two\"] "],["[template=\"two\"] div{","div[template=\"two\"]{"],["[template=\"three\"] .three:",".three[template=\"three\"]:"],["[template=\"three\"] .three ",".three[template=\"three\"] "],["[template=\"three\"] .three{",".three[template=\"three\"]{"],["[template=\"three\"] div:","div[template=\"three\"]:"],["[template=\"three\"] div ","div[template=\"three\"] "],["[template=\"three\"] div{","div[template=\"three\"]{"],["[template=\"four\"] .four:",".four[template=\"four\"]:"],["[template=\"four\"] .four ",".four[template=\"four\"] "],["[template=\"four\"] .four{",".four[template=\"four\"]{"],["[template=\"four\"] div:","div[template=\"four\"]:"],["[template=\"four\"] div ","div[template=\"four\"] "],["[template=\"four\"] div{","div[template=\"four\"]{"],["[template=\"five\"] .five:",".five[template=\"five\"]:"],["[template=\"five\"] .five ",".five[template=\"five\"] "],["[template=\"five\"] .five{",".five[template=\"five\"]{"],["[template=\"five\"] div:","div[template=\"five\"]:"],["[template=\"five\"] div ","div[template=\"five\"] "],["[template=\"five\"] div{","div[template=\"five\"]{"],["[template=\"six\"] .six:",".six[template=\"six\"]:"],["[template=\"six\"] .six ",".six[template=\"six\"] "],["[template=\"six\"] .six{",".six[template=\"six\"]{"],["[template=\"six\"] div:","div[template=\"six\"]:"],["[template=\"six\"] div ","div[template=\"six\"] "],["[template=\"six\"] div{","div[template=\"six\"]{"],["[template=\"seven\"] .seven:",".seven[template=\"seven\"]:"],["[template=\"seven\"] .seven ",".seven[template=\"seven\"] "],["[template=\"seven\"] .seven{",".seven[template=\"seven\"]{"],["[template=\"seven\"] div:","div[template=\"seven\"]:"],["[template=\"seven\"] div ","div[template=\"seven\"] "],["[template=\"seven\"] div{","div[template=\"seven\"]{"],["[template=\"eight\"] .eight:",".eight[template=\"eight\"]:"],["[template=\"eight\"] .eight ",".eight[template=\"eight\"] "],["[template=\"eight\"] .eight{",".eight[template=\"eight\"]{"],["[template=\"eight\"] div:","div[template=\"eight\"]:"],["[template=\"eight\"] div ","div[template=\"eight\"] "],["[template=\"eight\"] div{","div[template=\"eight\"]{"],["[template=\"nine\"] .nine:",".nine[template=\"nine\"]:"],["[template=\"nine\"] .nine ",".nine[template=\"nine\"] "],["[template=\"nine\"] .nine{",".nine[template=\"nine\"]{"],["[template=\"nine\"] div:","div[template=\"nine\"]:"],["[template=\"nine\"] div ","div[template=\"nine\"] "],["[template=\"nine\"] div{","div[template=\"nine\"]{"],["[template=\"ten\"] .ten:",".ten[template=\"ten\"]:"],["[template=\"ten\"] .ten ",".ten[template=\"ten\"] "],["[template=\"ten\"] .ten{",".ten[template=\"ten\"]{"],["[template=\"ten\"] div:","div[template=\"ten\"]:"],["[template=\"ten\"] div ","div[template=\"ten\"] "],["[template=\"ten\"] div{","div[template=\"ten\"]{"]] 
+10:34:25.194 INFO  正在处理script! 
+10:34:25.200 INFO  工程中包含多个页面! 
+10:34:25.208 INFO  包含有页面切换动画! 
+10:34:25.208 INFO  动画列表: rotateCarouselLeftOut,,ontop,rotateCarouselLeftIn,rotateCarouselRightOut,rotateCarouselRightIn 
+10:34:25.260 INFO  文件夹不存在: D:\work\Wuhan Summit\dist\static\js 
+10:34:25.260 INFO  创建文件夹: D:\work\Wuhan Summit\dist\static\js 
+10:34:28.748 INFO  js中的资源处理完毕! 
+10:34:28.748 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"swiper.4.5.0","src":"./src/resource/swiper.4.5.0.min.js"},{"name":"main","src":"./src/main.js","resource":true}] 
+10:34:28.748 DEBUG 外部脚本数量: 3 
+10:34:28.748 DEBUG 处理脚本: jquery1.11.0 
+10:34:28.748 DEBUG 网络脚本: jquery1.11.0 
+10:34:28.748 DEBUG 处理脚本: swiper.4.5.0 
+10:34:28.748 INFO  读取文件: D:\work\Wuhan Summit\src\resource\swiper.4.5.0.min.js 
+10:34:28.749 DEBUG 处理脚本: main 
+10:34:28.749 INFO  读取文件: D:\work\Wuhan Summit\src\main.js 
+10:34:28.749 DEBUG 输出scriptData 
+10:34:28.761 ERROR file does not exist: C:\Users\PG\Documents\GitHub\PG\core\animation\.css 
+10:34:28.788 INFO  写文件: D:\work\Wuhan Summit\dist\static\css\owo.animation.r5n3pqzsyj.css 
+10:34:28.806 INFO  写文件: D:\work\Wuhan Summit\dist\static\css\owo.animate.r5n3pqzsyj.css 
+10:34:28.806 DEBUG 准备输出html! 
+10:34:28.810 DEBUG 处理资源: ["D:/work/Wuhan Summit/src/resource/one-11.png","D:/work/Wuhan Summit/src/resource/one-10.png","D:/work/Wuhan Summit/src/resource/one-9.png","D:/work/Wuhan Summit/src/resource/two-8.png","D:/work/Wuhan Summit/src/resource/two-9.png","D:/work/Wuhan Summit/src/resource/three-9.png","D:/work/Wuhan Summit/src/resource/three-8.png","D:/work/Wuhan Summit/src/resource/three-7.png","D:/work/Wuhan Summit/src/resource/four-6.png","D:/work/Wuhan Summit/src/resource/five-9.png","D:/work/Wuhan Summit/src/resource/five-8.png","D:/work/Wuhan Summit/src/resource/five-7.png","D:/work/Wuhan Summit/src/resource/five-6.png","D:/work/Wuhan Summit/src/resource/five-5.png","D:/work/Wuhan Summit/src/resource/six-6.png","D:/work/Wuhan Summit/src/resource/six-5.png","D:/work/Wuhan Summit/src/resource/seven-13.png","D:/work/Wuhan Summit/src/resource/seven-5.png","D:/work/Wuhan Summit/src/resource/seven-11.png","D:/work/Wuhan Summit/src/resource/seven-6.png","D:/work/Wuhan Summit/src/resource/seven-10.png","D:/work/Wuhan Summit/src/resource/seven-9.png","D:/work/Wuhan Summit/src/resource/seven-8.png","D:/work/Wuhan Summit/src/resource/seven-7.png","D:/work/Wuhan Summit/src/resource/seven-4.png","D:/work/Wuhan Summit/src/resource/seven-3.png","D:/work/Wuhan Summit/src/resource/seven-12.png","D:/work/Wuhan Summit/src/resource/eight-2.png","D:/work/Wuhan Summit/src/resource/eight-3.png","D:/work/Wuhan Summit/src/resource/eight-1.png","D:/work/Wuhan Summit/src/resource/nine-0.png","D:/work/Wuhan Summit/src/resource/nine-1.png","D:/work/Wuhan Summit/src/resource/ten-0.png","D:/work/Wuhan Summit/src/resource/close.png","D:/work/Wuhan Summit/src/resource/people-1.png","D:/work/Wuhan Summit/src/resource/people-2.png","D:/work/Wuhan Summit/src/resource/people-3.png","D:/work/Wuhan Summit/src/resource/people-4.png","D:/work/Wuhan Summit/src/resource/people-5.png","D:/work/Wuhan Summit/src/resource/people-6.png","D:/work/Wuhan Summit/src/resource/people-7.png","D:/work/Wuhan Summit/src/resource/people-8.png","D:/work/Wuhan Summit/src/resource/people-9.png","D:/work/Wuhan Summit/src/resource/people-10.png"] 
+10:34:28.810 DEBUG 资源目录: D:/work/Wuhan Summit/dist/static/resource 
+10:34:28.902 DEBUG 开始美化html 
+10:34:29.024 INFO  文件写出成功! 
+10:34:29.024 INFO  写入文件: D:\work\Wuhan Summit\dist\static\css\owo.main.r5n3pqzsyj.css 
+10:34:29.025 INFO  主要逻辑文件写出成功! 
+10:34:29.025 INFO  animation文件写出成功! 
+10:34:29.025 INFO  读取成功: D:\work\Wuhan Summit\src\main.css 
+10:34:29.025 DEBUG 处理资源: ["D:/work/Wuhan Summit/src/resource/bg.png"] 
+10:34:29.025 DEBUG 资源目录: D:/work/Wuhan Summit/dist/static/resource 
+10:34:29.026 INFO  读取成功: D:\work\Wuhan Summit\src\main.js 
+10:34:29.029 INFO  读取成功: D:\work\Wuhan Summit\src\resource\swiper.4.5.0.min.css 
+10:34:29.992 INFO  写入文件: D:\work\Wuhan Summit\dist\static\css\main.css 
+10:34:30.020 INFO  写入文件: D:\work\Wuhan Summit\dist\static\js\main.js 
+10:34:30.144 INFO  写入文件: D:\work\Wuhan Summit\dist\static\css\swiper4.5.0.css 
+10:34:30.587 INFO  读取成功: D:\work\Wuhan Summit\src\resource\swiper.4.5.0.min.js 
+10:34:31.124 INFO  写入文件: D:\work\Wuhan Summit\dist\static\js\swiper.4.5.0.js 

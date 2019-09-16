@@ -1,5 +1,5 @@
 <template lang="pug">
-.one(:tap="owo.go('two', 'rotateCarouselLeftOut&&ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&&ontop', 'rotateCarouselRightIn')")
+.one
   img.soulless.so-11.item-11(width="643", height="382", src="@|one-11.png|")
   img.soulless.so-10.item-10(width="459", height="95", src="@|one-10.png|")
   img.soulless.so-9.item-9(width="209", height="52", src="@|one-9.png|") 
@@ -8,9 +8,17 @@
 <script>
   module.exports = {
     created: function () {
-      owo.tool.animate('fadeInLeftBig', this.query('.so-11')[0])
+      owo.tool.animate('fadeInLeftBig', this.query('.so-11')[0], 300)
       owo.tool.animate('fadeInRight', this.query('.so-10')[0], 1200)
       owo.tool.animate('fadeIn', this.query('.so-9')[0],2000)
+      owo.tool.touch({
+        el: this.$el,
+        end: function end(e) {
+          if (e.swipe[0] < -100) {
+            owo.go('two', 'rotateCarouselLeftOut&&ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&&ontop', 'rotateCarouselRightIn', true)
+          }
+        }
+      })
     }
   }
 </script>

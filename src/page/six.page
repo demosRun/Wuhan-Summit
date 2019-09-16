@@ -1,5 +1,5 @@
 <template lang="pug">
-.six(:tap="owo.go('seven', 'rotateCarouselLeftOut&&ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&&ontop', 'rotateCarouselRightIn')")
+.six
   img.soulless.so-6.item-6(width="769", height="92", src="@|six-6.png|")
   img.soulless.so-5.item-5(width="659", height="941", src="@|six-5.png|")
 </template>
@@ -7,6 +7,16 @@
 <script>
   module.exports = {
     created: function () {
+      owo.tool.touch({
+        el: this.$el,
+        end: function end(e) {
+          if (e.swipe[0] < -100) {
+            owo.go('seven', 'rotateCarouselLeftOut&&ontop', 'rotateCarouselLeftIn', 'rotateCarouselRightOut&&ontop', 'rotateCarouselRightIn', true)
+          } else if (e.swipe[0] > 100) {
+            owo.go('five', 'rotateCarouselRightOut&&ontop', 'rotateCarouselRightIn', 'rotateCarouselLeftOut&&ontop', 'rotateCarouselLeftIn', true)
+          }
+        }
+      })
     }
   }
 </script>
